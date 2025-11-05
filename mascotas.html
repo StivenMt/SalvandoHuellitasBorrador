@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascotas Disponibles - Salvando Huellitas</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><div class="logo-circle"> <img src="imagenes/logo-Photoroom.png" alt="" class="lg"></div></a>
+    </div>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Filtrar Mascotas</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="filterPets('all')">Todas las mascotas</a>
+          <a href="#" onclick="filterPets('perro')">Perros</a>
+          <a href="#" onclick="filterPets('gato')">Gatos</a>
+          <a href="#" onclick="filterPets('otro')">Otros</a>
+        </div>
+      </div>
+      <button class="nav-btn" id="btn-tienda" onclick="tndv()">Tienda Virtual</button>
+      <button class="nav-btn" id="btn-volver" onclick="volverInicio()">Volver al Inicio</button>
+    </nav>
+  </header>
+
+  <!-- Banner de Mascotas -->
+  <section class="banner-mascotas">
+    <div class="banner-contenido">
+      <h1>🐾 Mascotas Disponibles para Adopción</h1>
+      <p>Cada uno de estos angelitos está esperando conocerte. Encuentra a tu compañero ideal y dale una segunda oportunidad.</p>
+    </div>
+  </section>
+
+  <!-- Pets Section -->
+  <section class="seccion_mascotas">
+    <h2 class="seccion_titulo">Nuestras Mascotas</h2>
+    <div id="contenedor_mascotas"></div>
+  </section>
+
+  <!-- Formulario de adopción -->
+  <div id="mascota_formulario" class="ocultador">
+    <h2>Solicitud de Adopción</h2>
+    <p id="mascota_adopcion"></p>
+    
+    <form id="formulario_adopcion">
+      <input type="text" id="nombre_solicitante" placeholder="Tu nombre completo" required>
+      <input type="email" id="email_solicitante" placeholder="Tu correo electrónico" required>
+      <textarea id="msg_solicitante" placeholder="Cuéntanos por qué quieres adoptar a esta mascota y qué experiencia tienes con animales..." required></textarea>
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+    
+    
+    <div class="success-content">
+      <div class="success-icono">✅</div>
+      <h3 class="success-titulo">¡Solicitud Enviada!</h3>
+      <p class="success-mensaje" id="success-mensaje-texto"></p>
+    </div>
+    
+    <button id="cerrar_form" class="c2">Cancelar</button>
+  </div>
+
+  <footer>
+    <div class="p_pag">
+      <div class="parts_ppag">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos una organización sin fines de lucro dedicada a rescatar, rehabilitar y encontrar hogares amorosos para mascotas abandonadas.</p>
+      </div>
+      
+      <div class="parts_ppag">
+        <h3>Contacto</h3>
+        <p>📧 info@donbosco.edu.co</p>
+        <p>📱 +57 300 123 4567</p>
+        <p>📍 Popayán, Colombia</p>
+      </div>
+      <div class="parts_ppag">
+      </div>
+      <div class="parts_ppag">
+        <h3>Horario</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 10:00 - 16:00</p>
+        <p>Domingos: Cerrado</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PROYECTO DE GRADO - JHON ESTIVEN MUÑOZ TORRES | CARLOS DANIEL RUIZ LUGO</p>
+    </div>
+  </footer>
+
+  <script src="logica.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvando Huellitas</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><div class="logo-circle"> <img src="imagenes/logo-Photoroom.png" alt="" class="lg"></div></a>
+    </div>
+    <nav>
+      <button class="nav-btn" id="btn-mascotas" onclick="irMascotas()">Ver Mascotas</button>
+      <button class="nav-btn" id="btn-tienda" onclick="tndv()">Tienda Virtual</button>
+      <button class="nav-btn" id="btn-admin">Panel Admin</button>
+    </nav>
+  </header>
+
+  <!-- Vista pública -->  
+  <div id="vista_p_general">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="superior">
+        <h2 id="tt">Encuentra tu compañero de Vida</h2>
+        <p id="des">Miles de mascotas están esperando un hogar lleno de amor. Adopta y cambia una vida para siempre. Cada adopción es una segunda oportunidad para crear momentos inolvidables.</p>
+      </div>
+      <img id="presentacionft" src="imagenes/animalesft.png" alt="">
+    </section>
+
+    <!-- Estadísticas Section -->
+    <section class="buscador">
+      <div class="inicial_cartas">
+        <div class="prim_icono">🐾</div>
+        <div class="informa">2,500+</div>
+        <div class="textos">Mascotas adoptadas</div>
+      </div>
+      <div class="inicial_cartas">
+        <div class="prim_icono">❤️</div>
+        <div class="informa">5,000+</div>
+        <div class="textos">Familias felices</div>
+      </div>
+      <div class="inicial_cartas">
+        <div class="prim_icono">⭐</div>
+        <div class="informa">15+</div>
+        <div class="textos">Años de experiencia</div>
+      </div>
+      <div class="inicial_cartas">
+        <div class="prim_icono">🐾</div>
+        <div class="informa">100%</div>
+        <div class="textos">Compromiso y amor</div>
+      </div>
+      <div class="inicial_cartas" id="aseo">
+        <div class="prim_icono">🛒</div>
+        <div class="informa">Productos</div>
+        <div class="textos">Cuidado y Aseo</div>
+      </div>
+    </section>
+
+    <!-- Proceso de Adopción -->
+    <section class="proceso-adopcion">
+      <h2 class="seccion_titulo">¿Cómo Adoptar?</h2>
+      <div class="pasos-grid">
+        <div class="paso-card">
+          <div class="paso-numero">1</div>
+          <div class="paso-icono">🔍</div>
+          <h3>Explora</h3>
+          <p>Navega por nuestras mascotas disponibles y encuentra la que conecte contigo</p>
+        </div>
+        <div class="paso-card">
+          <div class="paso-numero">2</div>
+          <div class="paso-icono">📝</div>
+          <h3>Solicita</h3>
+          <p>Completa el formulario de adopción con tus datos y experiencia con mascotas</p>
+        </div>
+        <div class="paso-card">
+          <div class="paso-numero">3</div>
+          <div class="paso-icono">🤝</div>
+          <h3>Conoce</h3>
+          <p>Agenda una visita para conocer a tu futura mascota en persona</p>
+        </div>
+        <div class="paso-card">
+          <div class="paso-numero">4</div>
+          <div class="paso-icono">🏡</div>
+          <h3>Adopta</h3>
+          <p>Completa el proceso y lleva a tu nuevo amigo a casa</p>
+        </div>
+      </div>
+      <button class="cta-button" onclick="irMascotas()">Ver Mascotas Disponibles</button>
+    </section>
+
+    <!-- Historias de Éxito -->
+    <section class="historias-exito">
+      <h2 class="seccion_titulo" id="seccion_titulo2">Historias que Inspiran</h2>
+      <div class="historias-grid">
+        <div class="historia-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTsEUl1ZtzxJmfOH-dbec7Z6SC7taELFvGnQ&s" alt="Historia 1">
+          <div class="historia-contenido">
+            <h4>"Max cambió nuestras vidas"</h4>
+            <p>Adoptar a Max fue la mejor decisión. Llegó tímido pero ahora es el alma de la familia. ¡No imaginamos la vida sin él!</p>
+            <span class="historia-autor">- María González</span>
+          </div>
+        </div>
+        <div class="historia-card">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400" alt="Historia 2">
+          <div class="historia-contenido">
+            <h4>"Luna nos adoptó a nosotros"</h4>
+            <p>Fuimos a conocer a Luna y fue amor a primera vista. Es cariñosa, juguetona y nos llena de alegría cada día.</p>
+            <span class="historia-autor">- Carlos Ramírez</span>
+          </div>
+        </div>
+        <div class="historia-card">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400" alt="Historia 3">
+          <div class="historia-contenido">
+            <h4>"Rocky nos enseñó a amar"</h4>
+            <p>Rocky tenía un pasado difícil, pero con amor y paciencia se convirtió en el perro más noble y protector.</p>
+            <span class="historia-autor">- Ana Martínez</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="apar_info">
+      <div class="info-grid">
+        <div class="info_contenedor">
+          <h2>¿Por qué adoptar con nosotros?</h2>
+          <p>Somos una organización dedicada al bienestar animal con más de 15 años de experiencia. Cada mascota pasa por un proceso de evaluación, cuidado veterinario y socialización antes de encontrar su hogar perfecto.</p>
+          
+          <div class="info_caracas">
+            <div class="caracteristica">
+              <div class="icono_caracteristica">✓</div>
+              <div class="text_caracter">
+                <h4>Atención veterinaria completa</h4>
+                <p>Todas nuestras mascotas están vacunadas, desparasitadas y esterilizadas</p>
+              </div>
+            </div>
+            <div class="caracteristica">
+              <div class="icono_caracteristica">✓</div>
+              <div class="text_caracter">
+                <h4>Asesoramiento personalizado</h4>
+                <p>Te ayudamos a encontrar la mascota perfecta para tu estilo de vida</p>
+              </div>
+            </div>
+            <div class="caracteristica">
+              <div class="icono_caracteristica">✓</div>
+              <div class="text_caracter">
+                <h4>Seguimiento post-adopción</h4>
+                <p>Estamos contigo durante todo el proceso de adaptación</p>
+              </div>
+            </div>
+            <div class="caracteristica">
+              <div class="icono_caracteristica">✓</div>
+              <div class="text_caracter">
+                <h4>Proceso simple y transparente</h4>
+                <p>Hacemos que adoptar sea fácil, rápido y seguro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-image">
+          <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800"  alt="Familia feliz con mascota">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Panel de administración -->
+  <div id="panel_administrador" class="ocultador">
+    <h2>Panel de Administración</h2>
+    <button id="btn_salir" class="nav-btn" style="display: block; margin: 0 auto 30px;">Cerrar Sesión</button>
+
+    <h3>Agregar Nueva Mascota</h3>
+    <form id="agregar_mascotas">
+      <input type="text" id="pet_nmbre" placeholder="Nombre de la mascota" required>
+      <input type="text" id="pet_raza" placeholder="Raza" required>
+      <input type="text" id="pet_img" placeholder="URL de la imagen" required>
+      <textarea id="pet_desc" placeholder="Descripción de la mascota (personalidad, edad, características especiales...)" required></textarea>
+      <select id="pet_type" required>
+        <option value="">Selecciona el tipo</option>
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="otro">Otro</option>
+      </select>
+      <button type="submit">Guardar Mascota</button>
+    </form>
+
+    <h3>Lista de Mascotas Registradas</h3>
+    <div id="lsta_mascotas_admin"></div>
+
+    <h3>Solicitudes de Adopción Pendientes</h3>
+    <div id="lista_solicitudes_admin"></div>
+  </div>
+
+  <!-- Formulario de adopción -->
+  <div id="mascota_formulario" class="ocultador">
+    <h2>Solicitud de Adopción</h2>
+    <p id="mascota_adopcion"></p>
+    
+    <form id="formulario_adopcion">
+      <input type="text" id="nombre_solicitante" placeholder="Tu nombre completo" required>
+      <input type="email" id="email_solicitante" placeholder="Tu correo electrónico" required>
+      <textarea id="msg_solicitante" placeholder="Cuéntanos por qué quieres adoptar a esta mascota y qué experiencia tienes con animales..." required></textarea>
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+    
+    <div class="success-content">
+      <div class="success-icono">✅</div>
+      <h3 class="success-titulo">¡Solicitud Enviada!</h3>
+      <p class="success-mensaje" id="success-mensaje-texto"></p>
+    </div>
+    
+    <button id="cerrar_form">Cancelar</button>
+  </div>
+
+  <!-- Modal de login admin -->
+  <div id="modal-admin-login" class="modal-overlay ocultador">
+    <div class="modal-contenido">
+      <div class="modal-icono">🔐</div>
+      <h3 class="modal-titulo">Panel de Administración</h3>
+      <p class="modal-mensaje">Ingresa la contraseña para acceder</p>
+      <input type="password" id="admin-password-input" class="modal-input" placeholder="Contraseña">
+      <p id="login-error" class="modal-error ocultador">Contraseña incorrecta</p>
+      <div class="modal-botones">
+        <button class="modal-btn modal-btn-secondary" id="btn-cancelar-login">Cancelar</button>
+        <button class="modal-btn modal-btn-primary" id="btn-confirmar-login">Ingresar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="p_pag">
+      <div class="parts_ppag">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos una organización sin fines de lucro dedicada a rescatar, rehabilitar y encontrar hogares amorosos para mascotas abandonadas.</p>
+      </div>
+      
+      <div class="parts_ppag">
+        <h3>Contacto</h3>
+        <p>📧 info@donbosco.edu.co</p>
+        <p>📱 +57 300 123 4567</p>
+        <p>📍 Popayán, Colombia</p>
+      </div>
+      <div class="parts_ppag">
+      </div>
+      <div class="parts_ppag">
+        <h3>Horario</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 10:00 - 16:00</p>
+        <p>Domingos: Cerrado</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PROYECTO DE GRADO - JHON ESTIVEN MUÑOZ TORRES | CARLOS DANIEL RUIZ LUGO</p>
+    </div>
+  </footer>
+
+  <script src="logica.js"></script>
+</body>
+</html>
